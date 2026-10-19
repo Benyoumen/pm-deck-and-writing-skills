@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PM Deck and Writing Skills</title>
+<meta name="description" content="A pilot proposal for a fictional AI sales assistant, rendered as a live deck with the slide writing rules of the pm-deck-and-writing-skills repository.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://benyoumen.github.io/pm-deck-and-writing-skills/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PM Deck and Writing Skills">
+<meta property="og:title" content="PM Deck and Writing Skills">
+<meta property="og:description" content="An eight-slide pilot proposal for a fictional AI sales assistant, built with the slide writing rules in the repository: factual titles, one question per slide, a labeled takeaway, concrete dates.">
+<meta property="og:url" content="https://benyoumen.github.io/pm-deck-and-writing-skills/">
+<meta property="og:image" content="https://raw.githubusercontent.com/Benyoumen/pm-deck-and-writing-skills/main/assets/banner.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PM Deck and Writing Skills">
+<meta name="twitter:description" content="A live deck built with the slide writing rules in the repository. Fictional product, illustrative figures.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2313213B'/%3E%3Crect x='7' y='8' width='12' height='4' fill='%23F4F6F9'/%3E%3Crect x='7' y='21' width='18' height='4' fill='%23D84A1B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;0,800;1,400&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#s1">Skip to the first slide</a>
+<div class="progress" aria-hidden="true"><div class="progress__bar" id="progress"></div></div>
+
+<main class="deck" id="deck">
+  <div class="viewport">
+    <div class="stagewrap" id="stagewrap">
+      <div class="stage" id="stage">
+
+        <section class="slide slide--deep slide--cover" id="s1" role="group" aria-roledescription="slide" aria-label="Slide 1 of 9">
+          <p class="eyebrow">Pilot proposal</p>
+          <h1 class="cover__title">Acme Field Sales Assistant</h1>
+          <p class="cover__sub">An assistant that drafts the follow-up email and the CRM update after every customer visit. The rep reviews and approves.</p>
+          <p class="meta">14 May 2026 | Sales leadership</p>
+          <p class="foot">Fictional company and illustrative figures. A demonstration of the slide writing rules.</p>
+        </section>
+
+        <section class="slide" id="s2" role="group" aria-roledescription="slide" aria-label="Slide 2 of 9">
+          <p class="eyebrow">Overview</p>
+          <h2>What this material answers</h2>
+          <ol class="map">
+            <li><span class="map__q">What is the problem?</span><span class="map__ref">slide 3</span></li>
+            <li><span class="map__q">What does it cost?</span><span class="map__ref">slide 4</span></li>
+            <li><span class="map__q">How does the assistant work?</span><span class="map__ref">slide 5</span></li>
+            <li><span class="map__q">What is the risk?</span><span class="map__ref">slide 6</span></li>
+            <li><span class="map__q">How do we know it works?</span><span class="map__ref">slide 7</span></li>
+            <li><span class="map__q">What happens now?</span><span class="map__ref">slide 8</span></li>
+          </ol>
+        </section>
+
+        <section class="slide" id="s3" role="group" aria-roledescription="slide" aria-label="Slide 3 of 9">
+          <p class="eyebrow">The problem</p>
+          <h2>Half of visits reach the CRM</h2>
+          <div class="body body--kpi">
+            <div class="kpi">
+              <p class="kpi__label">Visits logged within 24 hours</p>
+              <p class="kpi__value">52<span class="kpi__unit">%</span></p>
+              <p class="kpi__meta"><span>Target 80%</span><span class="kpi__gap">Gap 28 pp</span></p>
+            </div>
+            <figure class="gapbar" role="img" aria-label="52 percent of visits are logged today, the target is 80 percent, a gap of 28 percentage points">
+              <div class="gapbar__track">
+                <div class="gapbar__fill" style="width:52%"></div>
+                <div class="gapbar__gap" style="left:52%;width:28%"></div>
+                <div class="gapbar__tick" style="left:80%"></div>
+              </div>
+              <div class="gapbar__labels">
+                <span class="gapbar__now" style="left:52%">52% today</span>
+                <span class="gapbar__target" style="left:80%">80% target</span>
+              </div>
+              <figcaption>Share of customer visits with a CRM record within 24 hours, last eight weeks</figcaption>
+            </figure>
+          </div>
+          <div class="take"><p><b class="take__label">Largest gap.</b> Only 52% of customer visits reach the CRM within 24 hours, which means the forecast is built on about half of the activity. The target is 80%, so the gap is <b>28 percentage points</b>. The pilot goes after it directly: the assistant drafts the CRM update at the end of each visit and <b>the rep approves it</b>.</p></div>
+          <p class="source">CRM activity export, eight weeks to 9 May 2026. Illustrative figures.</p>
+        </section>
+
+        <section class="slide" id="s4" role="group" aria-roledescription="slide" aria-label="Slide 4 of 9">
+          <p class="eyebrow">The cost</p>
+          <h2>Reps lose 25 minutes per visit</h2>
+          <div class="body body--cost">
+            <div class="bars">
+              <div class="bar">
+                <p class="bar__label">Today, after each visit</p>
+                <div class="bar__track"><div class="bar__fill bar__fill--ink" style="width:100%"></div></div>
+                <p class="bar__value">25 min</p>
+              </div>
+              <div class="bar">
+                <p class="bar__label">With the assistant: review and approve</p>
+                <div class="bar__track"><div class="bar__fill bar__fill--mark" style="width:8%"></div></div>
+                <p class="bar__value">about 2 min</p>
+              </div>
+            </div>
+            <dl class="facts">
+              <div><dt>12</dt><dd>visits a week per rep</dd></div>
+              <div><dt>5 h</dt><dd>a week per rep spent writing</dd></div>
+              <div><dt>10</dt><dd>reps in the pilot team</dd></div>
+            </dl>
+          </div>
+          <div class="take"><p><b class="take__label">Cost per week.</b> At 12 visits a week, <b>25 minutes</b> of writing per visit adds up to about <b>5 hours a week per rep</b>, close to 50 hours a week for the pilot team of ten. The assistant drafts the email and the CRM update; the rep reviews both in about <b>two minutes</b>. The pilot measures the time after each visit, before and after.</p></div>
+          <p class="source">Rep time survey, 40 answers, April 2026. Illustrative figures.</p>
+        </section>
+
+        <section class="slide slide--deep" id="s5" role="group" aria-roledescription="slide" aria-label="Slide 5 of 9">
+          <p class="eyebrow">The approach</p>
+          <h2>How the assistant works</h2>
+          <ol class="steps">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">1</span>
+              <h3>Reads the meeting notes</h3>
+              <p>The rep's notes from the visit, typed or dictated</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">2</span>
+              <h3>Drafts the follow-up email</h3>
+              <p>Addressed to the customer, in the rep's name, ready to edit</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">3</span>
+              <h3>Proposes CRM field updates</h3>
+              <p>Stage, next step and date, each linked to the note it came from</p>
+            </li>
+          </ol>
+          <div class="take take--deep"><p><b class="take__label">Approval rule.</b> Nothing is sent and nothing is written without the rep's approval. The assistant <b>proposes</b>; the rep <b>decides</b>. Each proposal shows the line of the notes it came from, so a rep checks a change in seconds instead of rereading the meeting.</p></div>
+        </section>
+
+        <section class="slide" id="s6" role="group" aria-roledescription="slide" aria-label="Slide 6 of 9">
+          <p class="eyebrow">The risk</p>
+          <h2>Reps approve every change</h2>
+          <div class="body body--contrast">
+            <div class="zero">
+              <p class="zero__value">0</p>
+              <p class="zero__label">emails sent or CRM fields written without rep approval</p>
+            </div>
+            <div class="contrast">
+              <div class="contrast__col contrast__col--on">
+                <h3>What the assistant does</h3>
+                <ul>
+                  <li>Drafts the follow-up email</li>
+                  <li>Proposes CRM field updates</li>
+                  <li>Shows the note each proposal came from</li>
+                </ul>
+              </div>
+              <div class="contrast__col">
+                <h3>What it never does</h3>
+                <ul>
+                  <li>Sends an email</li>
+                  <li>Writes a CRM field</li>
+                  <li>Contacts a customer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="take"><p><b class="take__label">Scope limit.</b> During the pilot the assistant runs in <b>draft-only mode</b>: no write access to the CRM and no outgoing mail. Sales operations confirms the draft-mode permissions by <b>28 May</b>. Anything beyond that scope is a separate decision after the readout.</p></div>
+        </section>
+
+        <section class="slide" id="s7" role="group" aria-roledescription="slide" aria-label="Slide 7 of 9">
+          <p class="eyebrow">The test</p>
+          <h2>Pilot design and success criteria</h2>
+          <div class="body body--pilot">
+            <dl class="design">
+              <div><dt>Duration</dt><dd>Four weeks, from 2 June</dd></div>
+              <div><dt>Team</dt><dd>Northern region, ten reps</dd></div>
+              <div><dt>Measure</dt><dd>Share of visits with a CRM record within 24 hours, read from the CRM every week</dd></div>
+              <div><dt>Also tracked</dt><dd>Drafts approved without edits; time spent after each visit</dd></div>
+            </dl>
+            <figure class="gapbar gapbar--small" role="img" aria-label="From 52 percent today to a target of 80 percent by week 4">
+              <div class="gapbar__track">
+                <div class="gapbar__fill" style="width:52%"></div>
+                <div class="gapbar__gap" style="left:52%;width:28%"></div>
+                <div class="gapbar__tick" style="left:80%"></div>
+              </div>
+              <div class="gapbar__labels">
+                <span class="gapbar__now" style="left:52%">52% today</span>
+                <span class="gapbar__target" style="left:80%">80% week 4</span>
+              </div>
+              <figcaption>Visits logged within 24 hours, weekly</figcaption>
+            </figure>
+          </div>
+          <div class="take"><p><b class="take__label">Success test.</b> The pilot passes if <b>at least 80%</b> of visits are logged within 24 hours in <b>week 4</b>, from 52% today (the baseline on slide 3). The figure comes from the CRM each week, not from a survey. The readout on <b>7 July</b> shows the weekly curve either way.</p></div>
+        </section>
+
+        <section class="slide slide--deep" id="s8" role="group" aria-roledescription="slide" aria-label="Slide 8 of 9">
+          <p class="eyebrow">What happens now</p>
+          <h2>Next steps</h2>
+          <ol class="next">
+            <li><span class="next__date">21 May</span><p><b>Decision requested:</b> approve the pilot with the Northern region team.</p></li>
+            <li><span class="next__date">28 May</span><p>Sales operations confirms CRM write permissions for draft mode.</p></li>
+            <li><span class="next__date">2 June</span><p>Pilot starts and runs four weeks.</p></li>
+            <li><span class="next__date">7 July</span><p>Readout to sales leadership with the share of visits logged within 24 hours, <b>before and after</b>.</p></li>
+          </ol>
+        </section>
+
+        <section class="slide slide--about" id="s9" role="group" aria-roledescription="slide" aria-label="Slide 9 of 9">
+          <p class="eyebrow">About</p>
+          <h2>About this deck</h2>
+          <p class="lead">Built with the rules in this repository. The structure follows <code>build-deck</code>, the copy follows <code>slide-writing-rules</code>, and every sentence passed <code>plain-language</code> and <code>anti-slop</code> before the render check.</p>
+          <div class="body body--about">
+            <div>
+              <h3>Rules you can check on these slides</h3>
+              <ul>
+                <li>Cover title in capitals; every other title in sentence case, six words at most</li>
+                <li>One question per slide, answered once</li>
+                <li>A takeaway block with a specific label on each content slide</li>
+                <li>Two to four bold fragments per slide; read only the bold text and the story holds</li>
+                <li>Concrete dates on every next step, the decision first</li>
+                <li>No person named</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Navigation</h3>
+              <ul>
+                <li>Arrow keys, Space, Page Up and Page Down, Home and End</li>
+                <li>Click the left or right edge of a slide, or swipe on a phone</li>
+                <li>Add <code>#s3</code> to the address to open slide 3</li>
+                <li>Print gives one page per slide</li>
+              </ul>
+              <p class="about__link"><a class="button" href="https://github.com/Benyoumen/pm-deck-and-writing-skills">Read the rules on GitHub</a></p>
+            </div>
+          </div>
+          <p class="source">Acme and the Acme Field Sales Assistant are fictional. All figures are illustrative.</p>
+        </section>
+
+      </div>
+      <button class="edge edge--prev" type="button" aria-label="Previous slide" data-nav="prev" tabindex="-1"></button>
+      <button class="edge edge--next" type="button" aria-label="Next slide" data-nav="next" tabindex="-1"></button>
+    </div>
+  </div>
+
+  <nav class="chrome" aria-label="Deck navigation">
+    <p class="chrome__name">Acme Field Sales Assistant, pilot proposal. Fictional example.</p>
+    <div class="chrome__controls">
+      <button type="button" class="btn" id="prev" data-nav="prev">Previous</button>
+      <span class="counter" id="counter" aria-live="polite">1 / 9</span>
+      <button type="button" class="btn" id="next" data-nav="next">Next</button>
+    </div>
+    <a class="chrome__link" href="https://github.com/Benyoumen/pm-deck-and-writing-skills">The rules on GitHub</a>
+  </nav>
+</main>
+
+<script src="deck.js"></script>
+</body>
+</html>

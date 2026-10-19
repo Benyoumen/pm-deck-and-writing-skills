@@ -1,26 +1,48 @@
 ---
 name: plain-language
-description: Reviews and rewrites material (deck, document, email, explanation) so the intended reader understands it on the first pass. Diagnoses what blocks comprehension and applies teaching techniques: definition in context, example, ordering from known to new, and "why this matters to me". Use when someone says "this is confusing", "make it simpler", "explain it better", "I did not get it", or when preparing training or a presentation for a non-specialist audience.
+description: Reviews and rewrites material so the intended reader understands it on the first pass, by diagnosing the seven comprehension blockers and applying definition in context, examples, ordering from known to new and the practical "so what". Use when someone says this is confusing, make it simpler or explain it better, or when preparing training or a presentation for non-specialists.
+license: MIT
+metadata:
+  version: "1.1"
+  author: Benjamin Tayar
+  method: pm-deck-and-writing-skills
 ---
 
-# Plain language: make material easy to understand
+# Plain language
 
-Goal: take content (a slide, a document, a passage, an explanation) and make **the right person understand it on the first read**, without you standing next to them. It is not "making it pretty" and not "summarizing". It is reducing the effort the reader spends to get the idea.
+> Make the right person understand the material on the first read, without you standing next to them. Not prettier, not shorter: less effort for the reader to get the idea.
+
+## When to use
+
+- "This is confusing", "make it simpler", "explain it better", "I did not get it".
+- Preparing training, a presentation or a document for a non-specialist audience.
+- As the clarity pass inside `build-deck`, `pm-communication` and `tech-pitch`.
 
 Master principle: **clarity is the writer's job, not the reader's.** If it is confusing, the text is wrong, not the reader.
 
-## First: who is the reader?
+## Inputs
 
-Calibrate to **one specific reader**. Ask, or infer, and fix:
+- The material: a slide, a document, a passage, an explanation.
+- The reader, as one specific person: role and area, what they already know about the topic, what they must do with it afterward (decide, execute, remember), how much time and attention they have.
+- The delivery mode: edit in place, return a revised version, or only point out suggestions.
 
-- **Who will read or watch?** Role, area, what they already know.
-- **What do they already know** about the topic? (the starting point)
-- **What must they do** with it afterward? (decide, execute, remember)
-- **How much time and attention** do they have?
+## Procedure
 
-The same content for a finance director and for a junior rep needs two different treatments. If the material serves two audiences, **separate the passages** or label them clearly ("for executives", "for the team").
+1. **Fix the reader and the goal.** If it is unclear and changes the approach, ask.
+2. **Read the material and mark the blockers** from the list of seven.
+3. **Choose the delivery mode.** Confirm if unclear.
+4. **Apply the fixes**, in priority: jargon, then missing example or analogy, then high load, then missing "so what". Add as well as cut: clarity sometimes needs **more** text (an example, a definition), not less.
+5. **Reread as the target reader.** "If I were the junior rep, would I understand this slide alone?" If not, fix it.
+6. **Preserve precision and facts.** Simplifying is not falsifying. Do not drop important exceptions; mark them as nuance. Do not change numbers, names or technical meaning.
+7. **When finished**, list two to four bullets: what changed and why ("defined PWIN inline; split the table in two slides").
 
-## The seven blockers (diagnosis)
+## Rules
+
+### First: one specific reader
+
+Calibrate to one reader. The same content for a finance director and for a junior rep needs two different treatments. If the material serves two audiences, **separate the passages** or label them clearly ("for executives", "for the team").
+
+### The seven blockers (diagnosis)
 
 Look for these symptoms. Each has a fix.
 
@@ -32,7 +54,7 @@ Look for these symptoms. Each has a fix.
 6. **No signposting.** The reader does not know where they are or where they are going. Use titles that state the message (not "Results" but "Sales fell 12%"), transitions and "what comes next".
 7. **Everything at the same weight.** Essential and detail mixed. Rank them: what is mandatory to know versus a footnote. Bold what matters; let the rest recede.
 
-## Techniques (cheapest to most powerful)
+### Techniques (cheapest to most powerful)
 
 - **Define in context.** "champion (the person inside the customer who argues for the purchase)". A short parenthesis often solves it.
 - **Analogy.** Connects the unknown to something known. Use analogies from the audience's own world and say where the analogy stops. (This is a teaching aid in explanations, not a decoration for slide titles. See `slide-writing-rules`, Rule 6.)
@@ -45,7 +67,7 @@ Look for these symptoms. Each has a fix.
 - **Repeat with variation.** The central point returns said another way (sentence, example, picture). Repetition is not redundancy when the form changes.
 - **Comprehension check.** In training, add a quick test or "and in this case, what would apply?".
 
-## By format
+### By format
 
 **Deck or presentation**
 - One concept per slide. Six dependent bullets are probably two or three slides.
@@ -63,23 +85,13 @@ Look for these symptoms. Each has a fix.
 - Sentence one is the answer. Then the why. Then the detail (inverted pyramid).
 - Use the reader's vocabulary, not yours.
 
-## Example
+### Limits
 
-Before: "Pipeline coverage fell below the 3x threshold, so forecast confidence is low."
-
-Problems: unexplained jargon, no "so what", no number a reader can check.
-
-After: "The team has 2.1 dollars of open deals for every dollar it must close this quarter (it needs 3). That makes the forecast unreliable. Action: add qualified deals worth 1.5 million dollars by 30 June." (illustrative figures)
-
-## How to run a review
-
-1. **Fix the reader and the goal.** If it is unclear and changes the approach, ask.
-2. **Read the material and mark the blockers** from the list of seven.
-3. **Choose the delivery mode:** edit in place, return a revised version, or only point out suggestions. Confirm if unclear.
-4. **Apply the fixes**, in priority: jargon, then missing example or analogy, then high load, then missing "so what". Add as well as cut: clarity sometimes needs **more** text (an example, a definition), not less.
-5. **Reread as the target reader.** "If I were the junior rep, would I understand this slide alone?" If not, fix it.
-6. **Preserve precision and facts.** Simplifying is not falsifying. Do not drop important exceptions; mark them as nuance. Do not change numbers, names or technical meaning.
-7. **When finished**, list two to four bullets: what changed and why ("defined PWIN inline; split the table in two slides").
+- **Do not talk down.** Senior readers want clarity, not diluted content. Clear is not simplistic.
+- **Do not lose rigor.** An established technical term stays (defined); it does not become imprecise slang.
+- **Do not invent a false example.** Use cases from the material or project. If a hypothetical is needed, label it hypothetical.
+- **Respect the structure and branding** if the material follows a guide. This skill improves content inside the standard; it does not replace it.
+- If the material is already clear for its audience, say so instead of inventing changes.
 
 ## Checklist
 
@@ -91,14 +103,29 @@ After: "The team has 2.1 dollars of open deals for every dollar it must close th
 - [ ] Titles state the message
 - [ ] Facts and numbers unchanged
 
+## Example
+
+Acme Field Sales Assistant, fictional; figures are illustrative. A line from the pilot readout, written for the sales team.
+
+**Weak**
+
+> Pipeline coverage fell below the 3x threshold, so forecast confidence is low.
+
+Problems: unexplained jargon (coverage, threshold), no "so what", no number a reader can check.
+
+**Corrected**
+
+> The team has 2.1 dollars of open deals for every dollar it must close this quarter (it needs 3). That makes the forecast unreliable. Action: add qualified deals worth 1.5 million dollars by 30 June.
+
+What changed: the term is defined in context with a number, the consequence is stated, and the action has an amount and a date.
+
 ## Definition of done
 
 The target reader, given the material alone, can explain the main point and the action back in their own words.
 
-## Limits
+## Related
 
-- **Do not talk down.** Senior readers want clarity, not diluted content. Clear is not simplistic.
-- **Do not lose rigor.** An established technical term stays (defined); it does not become imprecise slang.
-- **Do not invent a false example.** Use cases from the material or project. If a hypothetical is needed, label it hypothetical.
-- **Respect the structure and branding** if the material follows a guide. This skill improves content inside the standard, it does not replace it.
-- If the material is already clear for its audience, say so instead of inventing changes.
+- `anti-slop`: the companion pass; this one removes comprehension blockers, that one removes machine tells.
+- `slide-writing-rules`: Rules 4 and 5 and the message title come from here.
+- `concise-slide`: the one-idea slide is the format version of blocker 4.
+- `pm-communication` and `tech-pitch`: both run this pass before delivery.

@@ -1,15 +1,47 @@
 ---
 name: slide-writing-rules
-description: Editorial rules for the text of any slide deck. Covers short factual titles, capitalization, anonymity of people, nothing that reads as criticism, plain wording, no allegorical analogies, explicit validation criteria, the slide takeaway block, concrete dates and owners, no repeated slides, fit inside 16:9, and bold key points. Use when writing, reviewing or cleaning up a deck, or when asked to "fix the titles", "tighten this deck" or "review the wording".
+description: Editorial rules for the text of any slide deck, from short factual titles and anonymity of people to the takeaway block, concrete dates, no repeated slides and bold key points. Use when writing, reviewing or cleaning up a deck, or when asked to fix the titles, tighten a deck or review the wording.
+license: MIT
+metadata:
+  version: "1.1"
+  author: Benjamin Tayar
+  method: pm-deck-and-writing-skills
 ---
 
 # Slide writing rules
 
-These rules cover the **text** of a deck: titles, sentences, tone, structure of ideas across slides. Visual design is a separate concern (see `build-deck`). Use them on any deck, from a one-page update to a 40-slide readout.
+> The text of a deck, written so that a smart reader who was not in the room understands each slide in under ten seconds and can repeat its point.
 
-Reading test behind every rule: a smart reader who was not in the room understands the slide in under ten seconds and can repeat its point.
+## When to use
 
-## Rule 1: Titles are short, factual and consistent
+- Writing the text of a new deck, from a one-page update to a 40-slide readout.
+- Reviewing or cleaning up an existing deck: "fix the titles", "tighten this deck", "review the wording".
+- As the editorial pass inside `build-deck`, before the render QA.
+
+These rules cover text only: titles, sentences, tone and the structure of ideas across slides. Visual design lives in the style file of your deck (see `templates/style-and-design.md`).
+
+## Inputs
+
+- The deck, outline or draft text (HTML, Markdown or pasted).
+- The audience and register: executive, working team or client.
+- The sources behind every figure, so a claim can be checked while it is rewritten.
+- The deck type, because two exceptions depend on it: an internal accountability deck may name owners (Rule 2), and a client assessment drops the labeled takeaway box (Rule 9).
+
+## Procedure
+
+1. Pass every title through Rule 1.
+2. Sweep for personal names (Rule 2) and replace them with roles.
+3. Find anything that exposes or criticizes a person (Rule 3).
+4. Read every sentence as an outsider (Rules 4 to 7).
+5. Rewrite each takeaway block with Rule 9 and give it a specific label.
+6. Apply Rule 14, then run the scan test.
+7. Run the redundancy sweep (Rule 11): list each concept and where it appears, merge, apply the delete test.
+8. Check fit and navigation (Rules 12 and 13) on a render.
+9. Report what changed in two to four bullets.
+
+## Rules
+
+### Rule 1: Titles are short, factual and consistent
 
 - Maximum six words. The title states the message, not a story about it.
 - No literary or dramatic language ("the heart of", "a turning point", "the root of the problem", "the golden question").
@@ -24,7 +56,7 @@ Reading test behind every rule: a smart reader who was not in the room understan
 | The Hidden Cost Of Doing Nothing | What the current process costs |
 | Our Journey So Far | Status at the end of Q2 |
 
-## Rule 2: People are anonymous
+### Rule 2: People are anonymous
 
 - Never name a person in a slide, note, quote or table. This protects whoever gave an interview or feedback.
 - Replace names with roles or areas: "sales leadership", "finance", "one account executive".
@@ -33,7 +65,7 @@ Reading test behind every rule: a smart reader who was not in the room understan
 - **Exception:** an internal accountability deck may name owners of actions and decisions, with the role in parentheses: `Jordan Lee (PM)`. Remove the names before the deck leaves the group.
 - Company, product and category names stay. The rule protects people, not organizations.
 
-## Rule 3: Nothing reads as criticism of a person
+### Rule 3: Nothing reads as criticism of a person
 
 - Do not expose anyone's tenure, seniority, background or individual mistakes.
 - Describe the process, not the people in it.
@@ -41,7 +73,7 @@ Reading test behind every rule: a smart reader who was not in the room understan
   - Good: "Deal stage varies with each person's own criteria."
 - Turn a complaint into a neutral fact or a need: "The practical reading needs sign-off from sales leadership."
 
-## Rule 4: Every sentence means something to an outsider
+### Rule 4: Every sentence means something to an outsider
 
 - A line that only repeats jargon does not count.
   - Bad: "Counts in the ICP; no confirmed need or meeting."
@@ -49,17 +81,17 @@ Reading test behind every rule: a smart reader who was not in the room understan
 - When a technical criterion appears, say what it means in practice. Spell out an acronym the first time, in three to six words.
 - No slang or casual idiom ("ballpark", "dirty data", "hit the ceiling"). Use the professional equivalent.
 
-## Rule 5: Plain words
+### Rule 5: Plain words
 
 Short sentences, active voice, common vocabulary. The audience includes non-specialists. If a concept is technical, explain it before using it (see `plain-language`). Avoid the long dash as a connector; use a period, comma or colon (see `anti-slop`).
 
-## Rule 6: No allegorical analogies
+### Rule 6: No allegorical analogies
 
 - Forbidden: invented images such as a building with floors, a traffic light, a hero's journey, a football team.
 - Allowed: literal comparisons from the reader's own domain ("win rate by stage").
 - Describe the mechanism directly. If the analogy is the only way to be understood, the explanation is missing a step.
 
-## Rule 7: Every claim carries its validation criterion
+### Rule 7: Every claim carries its validation criterion
 
 - Never leave a statement where the reader could ask "how would I verify that?".
   - Vague: "The customer showed interest."
@@ -67,11 +99,11 @@ Short sentences, active voice, common vocabulary. The audience includes non-spec
 - A criterion is a filled field, a number, a deadline or a logged event. Name the trigger and where it is recorded.
 - During review, flag every sentence that depends on interpretation and replace it with a measurable one.
 
-## Rule 8: The value is always visible
+### Rule 8: The value is always visible
 
 For any deck about a product, agent or initiative, show the return in three terms: efficiency (time saved), quality (accuracy, fewer errors) and added value (revenue, predictability). Each capability block answers "what improves for the business?", not only "what does it do?".
 
-## Rule 9: The takeaway block closes every content slide
+### Rule 9: The takeaway block closes every content slide
 
 Each content slide ends with one block that carries the single sentence the reader keeps. Build it in this order:
 
@@ -91,7 +123,7 @@ Why it works: it opens on a translated number, defines "evidence" inline, contra
 
 **Exception, client assessments:** a client-facing assessment or readout may drop the labeled box. Items 1 to 5 still apply, in a plain unlabeled paragraph at the foot of the slide.
 
-## Rule 10: Dates, status and owners (tracking decks)
+### Rule 10: Dates, status and owners (tracking decks)
 
 - **Concrete dates, not vague terms.** "This week" becomes `23 to 27 June`. "Soon" becomes a date.
 - **Name the week by date**, not by number: "week of 15 June", not "week 1".
@@ -99,7 +131,7 @@ Why it works: it opens on a translated number, defines "evidence" inline, contra
 - **Status needs evidence.** Do not write "done" or "already applied" without a number or proof. Without proof, state the rule ("no agent ships without a defined KPI"), not a completed status.
 - **Owner pairs a person with a person or a team.** Never a person with a system ("Alex and the platform").
 
-## Rule 11: No repeated slides
+### Rule 11: No repeated slides
 
 - Each concept is explained in depth once, in one owner slide. Other slides cite it in one line.
 - The summary slide and the closing slide are maps, not copies.
@@ -111,35 +143,30 @@ Why it works: it opens on a translated number, defines "evidence" inline, contra
 
 Ten slides without overlap say more than sixteen with an echo.
 
-## Rule 12: Navigation (HTML decks)
+### Rule 12: Navigation (HTML decks)
 
-A deck built in HTML must be navigable from the start, and clicking content must not navigate. Provide: fixed up and down buttons, arrow keys, Page Up and Page Down, Space, Home and End, a `#sN` hash that opens slide N, a progress bar and an `n / total` counter, and respect for `prefers-reduced-motion`. A click on a number or a text selection must do nothing. Clicks that moved the page were reported as a defect in client review.
+A deck built in HTML must be navigable from the start, and clicking content must not navigate. Provide: fixed previous and next buttons, arrow keys, Page Up and Page Down, Space, Home and End, a `#sN` hash that opens slide N, a progress bar and an `n / total` counter, and respect for `prefers-reduced-motion`. A click on a number or a text selection must do nothing. Clicks that moved the page have been reported as a defect in client review.
 
-## Rule 13: Everything fits in 16:9
+### Rule 13: Everything fits in 16:9
 
 - Each slide fits in 1280 by 720 with nothing cut off and nothing overlapping.
 - A highlight number is a short token: `38%`, `3x`, `01`. A long comparison such as `38% vs 16%` goes in the text, not in the label.
 - If space runs out, trim the text first, then reduce size slightly. Shrinking a lot means the slide has too much content: split it in two.
 - Density has a ceiling. A table that does not fit becomes two slides or loses rows.
 
-## Rule 14: Bold marks the key points
+### Rule 14: Bold marks the key points
 
 - Two to four bold fragments per slide, the ones that carry the message: a figure with its unit, a deadline, a rule or decision.
 - Bold the payload, never a connective, a loose verb or an intensifier.
 - If more than about a quarter of the text is bold, nothing stands out. Cut.
 - **Scan test:** read only the bold fragments of the whole deck in order. They should tell the full story: situation, number, decision.
 
-## How to run a review
+### Limits
 
-1. Pass every title through Rule 1.
-2. Sweep for personal names (Rule 2) and replace with roles.
-3. Find anything that exposes or criticizes a person (Rule 3).
-4. Read every sentence as an outsider (Rules 4 to 7).
-5. Rewrite each takeaway block with Rule 9 and give it a specific label.
-6. Apply Rule 14, then run the scan test.
-7. Run the redundancy sweep (Rule 11): list each concept and where it appears, merge, apply the delete test.
-8. Check fit and navigation (Rules 12 and 13) on a render.
-9. Report what changed in two to four bullets.
+- Do not change figures, data or technical meaning while simplifying.
+- Keep company, product and category names; anonymity applies to people.
+- Fictional names in examples are fine. Mark the example as fictional.
+- This skill covers text only. Visual rules live in the design file of your deck.
 
 ## Checklist
 
@@ -156,13 +183,32 @@ A deck built in HTML must be navigable from the start, and clicking content must
 - [ ] Two to four bold fragments per slide; scan test passes
 - [ ] Nothing overflows at 1280 by 720
 
+## Example
+
+Acme Field Sales Assistant, a fictional product; figures are illustrative.
+
+**Weak**
+
+> Title: *The Hidden Cost Of Doing Nothing*
+>
+> How to read this. Jordan's team clearly gets it and the numbers speak for themselves, while the other region keeps ignoring data entry. This will continue to be monitored going forward.
+
+**Corrected**
+
+> Title: *What the current process costs*
+>
+> **Cost per week.** Reps spend **25 minutes** after each visit writing the follow-up and updating the CRM, about **5 hours a week** per rep. Logging within 24 hours stands at 52% against a target of 80%. The pilot measures the time after each visit, before and after, starting **2 June**.
+
+What changed: the title is six words in sentence case with no dramatic phrasing (Rule 1); the name is gone and the comparison describes the process, not the people (Rules 2 and 3); the label is specific, the block opens on a translated figure, shows a tension and closes on a dated action (Rule 9); three bold fragments carry the payload (Rule 14).
+
 ## Definition of done
 
 The deck passes the checklist, the scan test tells the story alone, and a reviewer who was not involved can state the main decision requested after reading only the titles and bold text.
 
-## Limits
+## Related
 
-- Do not change figures, data or technical meaning while simplifying.
-- Keep company, product and category names; anonymity applies to people.
-- Fictional names in examples are fine. Mark the example as fictional.
-- This skill covers text only. Visual rules live in the design file of your deck.
+- `build-deck`: runs these rules in order inside the full pipeline.
+- `concise-slide`: the breathing slide these rules allow after dense stretches.
+- `plain-language`: the clarity pass behind Rules 4 and 5.
+- `anti-slop`: the natural-prose pass behind Rule 5 and the takeaway block.
+- `deck-rebuild-blueprint`: the handoff document that cites these rules under "Tone".

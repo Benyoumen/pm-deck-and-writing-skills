@@ -64,4 +64,4 @@ One sans-serif family. Bold marks key points; on dark surfaces bold is pure whit
 
 ## 6. Navigation
 
-Fixed up and down buttons, arrow keys, Page Up and Down, Space, Home and End, `#sN` hash, progress bar, `n / total` counter. Clicking content does nothing.
+Fixed previous and next buttons, arrow keys, Page Up and Down, Space, Home and End, `#sN` hash, progress bar, `n / total` counter. Clicking content does nothing.

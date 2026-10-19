@@ -1,19 +1,43 @@
 ---
 name: concise-slide
-description: Builds a one-idea slide that is short and spacious. Defines the word budget, the four accepted layouts (three-node flow, two-column contrast, big number, result band), what to leave out, and ready HTML and CSS for a fixed 1280 by 720 stage. Use when asked for "a short slide", "a one-idea slide", "a slide with just the direction", or when a deck needs breathing room after dense slides.
+description: Builds a one-idea slide with a word budget, four accepted layouts and ready HTML and CSS for a fixed 1280 by 720 stage. Use when asked for a short slide, a slide with just the direction, or when a deck needs breathing room after dense slides.
+license: MIT
+metadata:
+  version: "1.1"
+  author: Benjamin Tayar
+  method: pm-deck-and-writing-skills
 ---
 
-# Concise slide: one slide, one idea
+# Concise slide
 
-A concise slide exists so that **one sentence can stand alone**. It is the opposite of a dense slide, not a summary of one. A reader understands it in five seconds without scanning the screen.
+> One slide, one idea: a sentence that stands alone, read in five seconds without scanning the screen.
 
-## When to use it
+## When to use
 
 Use it when the content is **direction, decision, sequence or result**: where we are heading, in what order, what that yields. Use it also to give the eye a rest after two or three dense slides.
 
 Do not use it for status, tables, request lists, a KPI with a target, a comparison of more than three items, or anything that needs a caveat. Content that needs a footnote does not fit here, and squeezing it only produces a vague slide.
 
-## Word budget (a rule, not a suggestion)
+A concise slide is the opposite of a dense slide, not a summary of one.
+
+## Inputs
+
+- The single idea the slide must carry, in one sentence.
+- The context or time frame for the eyebrow ("From next quarter", "Pilot, weeks 1 to 4").
+- The layout, chosen from the four below, or the content type so the layout can be chosen.
+- The design tokens of the deck (accent, ink, card) and the 1280 by 720 stage.
+
+## Procedure
+
+1. Confirm the topic qualifies: direction, decision, sequence or result. If it is status, a table, a KPI with a target or a list of requests, pick another format.
+2. Choose the layout: three-node flow for a sequence, two-column contrast for today versus later or in versus out, big number for breathing room, result band alone to close a chapter.
+3. Write inside the word budget. If the copy does not fit, cut content; never shrink the type.
+4. Drop the copy into the stage HTML below. Light one node at most.
+5. Check the slide at 1280 by 720: visible space around the content, nothing cut off, no second message.
+
+## Rules
+
+### Word budget (a rule, not a suggestion)
 
 | Element | Ceiling |
 |---|---|
@@ -27,14 +51,14 @@ Do not use it for status, tables, request lists, a KPI with a target, a comparis
 
 If the content does not fit the budget, it is not a concise-slide topic. Pick another format instead of shrinking the font.
 
-## The four layouts
+### The four layouts
 
 1. **Three-node flow (default).** Three numbered boxes with arrows between them and a dark band of objectives below. Use for sequence: first this, then that, then the other.
 2. **Two-column contrast.** Two boxes of equal size, one highlighted with the accent color and one neutral. Use for "today versus later" or "what is in versus out". No arrow.
 3. **Big number.** Dark background, two to four large numbers with a short label under each. Use for breathing room after dense content. Every number needs a verifiable source.
 4. **Result band alone.** Only the dark block with two or three large statements. Use to close a chapter.
 
-## Visual anatomy
+### Visual anatomy
 
 - Light background, dark text, one accent color used only for the eyebrow, numbering, arrows and the active node border.
 - **One node can be lit** (the thing happening now). Only one.
@@ -43,7 +67,7 @@ If the content does not fit the budget, it is not a concise-slide topic. Pick an
 - Generous space: 28 px gap between the row and the band, minimum node height of 176 px.
 - No takeaway block. **The whole slide is the conclusion.**
 
-## Ready HTML
+### Ready HTML and CSS
 
 It sits inside a fixed 1280 by 720 stage. Everything is in pixels. Replace the example copy with your own and keep the budget.
 
@@ -109,7 +133,13 @@ It sits inside a fixed 1280 by 720 stage. Everything is in pixels. Replace the e
 
 For three items in the band, use `grid-template-columns:repeat(3,1fr)` and lower `.ov` to 26 px.
 
-## Checklist before delivery
+### Limits
+
+- A number in the big-number layout needs a verifiable source, or it does not go on the slide.
+- The slide carries no footnote, caveat or second message. If one is needed, it is not a concise slide.
+- Keep the tokens of your deck; the colors above are placeholders.
+
+## Checklist
 
 - [ ] Title is five words or fewer and states the message alone
 - [ ] No node has more than one sentence
@@ -117,11 +147,34 @@ For three items in the band, use `grid-template-columns:repeat(3,1fr)` and lower
 - [ ] One lit node, and only one
 - [ ] At 1280 by 720 there is visible space around the content; if it feels tight, remove content, do not shrink type
 
+## Example
+
+Acme Field Sales Assistant, fictional. A slide meant to show the pilot sequence.
+
+**Weak**
+
+> Eyebrow: *Our plan for the coming months and beyond*
+> Title: *A Comprehensive Roadmap For The Assistant Rollout*
+> Lead: *This slide summarizes the three phases we intend to follow, each with its own goals, owners and risks, which are detailed on the following slides.*
+> Node 1: *Review all open requests from every team and consolidate them into a single prioritized list that the steering group can approve.* (22 words, two ideas)
+
+**Corrected**
+
+> Eyebrow: *From 2 June*
+> Title: *Pilot in three steps*
+> Node 1: *Team input* / *Collect the view of the ten reps who will use the assistant daily*
+> Node 2: *Draft-only pilot* / *Assistant drafts, rep approves, nothing is written without approval*
+> Node 3: *Readout* / *Share of visits logged within 24 hours, before and after*
+> Result band: *Faster follow-up* / *Cleaner CRM data*
+
+What changed: the eyebrow gives a date, the title is four words in sentence case, the lead is gone, each node is one sentence under 20 words, and the band carries the two results.
+
 ## Definition of done
 
 A colleague reads the slide for five seconds and states its single idea correctly. The slide has no footnote, caveat or second message.
 
-## Good and bad
+## Related
 
-- Bad node: "Review all open requests from every team and consolidate them into a single prioritized list that the steering group can approve." (22 words, two ideas)
-- Good node: "Consolidate open requests into one ordered list" (7 words)
+- `slide-writing-rules`: the title and wording rules this slide inherits.
+- `build-deck`: where a concise slide is inserted after dense stretches.
+- `templates/style-and-design.md`: the tokens to replace the placeholder colors above.

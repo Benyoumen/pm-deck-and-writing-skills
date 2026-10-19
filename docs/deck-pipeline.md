@@ -4,23 +4,16 @@ How the skills in this repo fit together, from request to delivered deck.
 
 ```mermaid
 flowchart TD
-    A[Request] --> B[Step 0: brief<br/>message, audience, sources, destination]
-    B --> G0{Gate: message in one sentence<br/>and one decision named?}
-    G0 -- no --> B
-    G0 -- yes --> C[Step 1: load rules<br/>slide-writing-rules, plain-language, anti-slop]
-    C --> D[Step 2: outline<br/>templates/deck-outline.md]
-    D --> G1{Gate: one question per slide,<br/>delete test passed?}
-    G1 -- no --> D
-    G1 -- yes --> E[Step 3: build HTML<br/>navigation, hash, print CSS]
-    E --> F[Step 4: wording pass<br/>takeaway labels, bold, scan test]
-    F --> H[Step 5: render QA<br/>PDF pages = slides, screenshot of each slide]
-    H --> G2{Gate: nothing cut off,<br/>nothing overlapping?}
-    G2 -- no --> E
-    G2 -- yes --> I[Step 6: deliver HTML and PDF<br/>report in 2 to 4 bullets]
-    I --> J{Handoff to engineering?}
-    J -- yes --> K[deck-rebuild-blueprint<br/>blueprint plus style-and-design]
-    J -- no --> L[Done]
+    A["Agree the message and the decision"] --> B["Outline: one question per slide"]
+    B --> C["Write the slides to the rules"]
+    C --> D["Build the deck"]
+    D --> E{"Nothing cut off or overlapping?"}
+    E -- "no" --> D
+    E -- "yes" --> F["Deliver the deck and the PDF"]
+    F -. "only if engineering rebuilds it" .-> G["Blueprint for engineering"]
 ```
+
+*From one agreed message to a delivered deck in six steps; the blueprint exists only for a deck that engineering will rebuild.*
 
 ## Which skill runs where
 

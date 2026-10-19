@@ -33,16 +33,16 @@ Every skill has the same shape: when to use, inputs, a numbered procedure, the r
 
 ```mermaid
 flowchart LR
-    A[Brief] --> B[build-deck]
-    B --> C[slide-writing-rules]
-    C --> D[plain-language]
-    D --> E[anti-slop]
-    E --> F{Render QA}
-    F -- fix --> C
-    F -- clean --> G[Deliver HTML and PDF]
-    G -. handoff .-> H[deck-rebuild-blueprint]
-    B -. breathing slide .-> I[concise-slide]
+    A["Brief: message and decision"] --> B["Outline the slides"]
+    B --> C["Write to the rules"]
+    C --> D["Make it clear and human"]
+    D --> E{"Render check passes?"}
+    E -- "no" --> C
+    E -- "yes" --> F["Deliver deck and PDF"]
+    F -. "engineering rebuild" .-> G["Blueprint for engineering"]
 ```
+
+*One message in, one checked deck out; the words are made clear and human before anything is rendered.*
 
 The full flow with its three gates is in [`docs/deck-pipeline.md`](docs/deck-pipeline.md). `tech-pitch` and `pm-communication` sit next to the pipeline: the first produces the script and brief for a customer-facing deck, the second writes the message that carries any deck or decision.
 
